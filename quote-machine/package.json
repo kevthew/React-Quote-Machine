@@ -1,6 +1,6 @@
 {
   "name": "quote-machine",
-  "hompage": "https://kevthew.github.io/React-Quote-Machine/",
+  "hompage": "https://kevthew.github.io/React-Quote-Machine/quote-machine",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
