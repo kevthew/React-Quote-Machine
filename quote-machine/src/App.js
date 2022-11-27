@@ -41,8 +41,10 @@ function App() {
     newAuthor(quoteData[ranNum].character);
     setImage(quoteData[ranNum].image)
   };
+const tweet = `"${quote}" \n -${author}`
 
-    
+console.log(tweet)
+
     
 //render
   return (
@@ -67,7 +69,7 @@ function App() {
             </div>
             <div className='button-div'>
               <button className='btn btn-primary' id="new-quote" onClick={() => ChangeQAndA()}>New Quote</button>
-              <a className='btn btn-primary' href="twitter.com/intent/tweet"  id="tweet-quote" ><i className="icon-twitter-sign"/></a>
+              <a className='btn btn-primary' href={`https://twitter.com/intent/tweet?text=${tweet}`} target="_blank" rel='noopener noreferrer' id="tweet-quote" ><i className="icon-twitter-sign"/></a>
             </div>
           </div>
         </>
